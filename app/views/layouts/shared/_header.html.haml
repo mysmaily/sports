@@ -1,0 +1,74 @@
+#nx-header
+  %a{:href => root_path}
+    .nx-logo
+  .nx-header-middle
+    .nx-headline
+      .joomla_sharethis
+        %p Follow Us On:
+        %span.st_facebook{:st_processed => "yes"}
+          %span.stButton{:style => "text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; padding-left: 0px; padding-right: 0px; width: 16px;"}
+            %span.chicklets.facebook  
+        %span.st_email{:st_processed => "yes"}
+          %span.stButton{:style => "text-decoration: none; color: rgb(0, 0, 0); display: inline-block; cursor: pointer; padding-left: 0px; padding-right: 0px; width: 16px;"}
+            %span.chicklets.email  
+    .nx-search
+      %form{:action => "/vmdemo/bakerymart/index.php/online-shop/search", :method => "get"}
+        .search
+          %input#product_suggest.ac_input{:autocomplete => "off", "data-max-item" => "5", "data-min-chars" => "3", "data-scroll" => "false", "data-scroll-height" => "400", :name => "keyword", :placeholder => "Search BakeryMart", :type => "text"}/
+          %input#sub-search{:onclick => "this.form.keyword.focus();", :type => "submit", :value => "Search"}/
+        %input{:name => "limitstart", :type => "hidden", :value => "0"}/
+        %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+        %input{:name => "view", :type => "hidden", :value => "category"}/
+  .nx-user-top
+    .nx-user-menu
+      %ul.menu
+        %li.item-132
+          %a{:href => new_user_session_path} Login
+        %li.item-133
+          %a{:href => new_user_session_path} Register
+        %li.item-134
+          %a{:href => "/vmdemo/bakerymart/index.php/customer-service"} Customer Service
+        %li.item-135
+          %a{:href => "/vmdemo/bakerymart/index.php/faq-s"}
+            %img{:alt => "FAQ's ", :src => "/vmdemo/bakerymart/images/live-help.png"}/
+            %span.image-title FAQ's
+    .nx-cart
+      .cart
+        %a{:name => "cart"}
+        #vmCartModule.vmCartModule
+          .minicart
+            .total_products
+              0 items         Total:
+              %span 00.00
+              %br/
+              %p Bakery Shopping
+              %p
+            .show-cart
+          %div{:style => "clear:both"}
+          #hiddencontainer{:style => "display:none"}
+            .container
+              .wrapper.marg-bot
+                .image
+                .fleft
+                  .product_row
+                    %span.product_name
+                    .clear
+                    %span.quantity
+                    .prices{:style => "display:inline;"}
+                    %a.vmicon.vmicon.vm2-remove_from_cart{:onclick => "remove_product_cart(this);"}
+                      %span.product_cart_id{:style => "display:none;"}
+                  .product_attributes
+              .wrapper2
+                .none
+                .xxx
+          #cart_list.show_products{:style => "display: none;"}
+            #vm_cart_products.vm_cart_products
+              .container
+                .wrapper2
+                  .xxx
+                    You cart is empty
+            .total
+            .show_cart
+          %div{:style => "display:none"}
+            .total_products
+          %input#extra_cart{:type => "hidden", :value => "1"}/

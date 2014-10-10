@@ -1,0 +1,812 @@
+/****** Product Detail *******/
+#nx-product-details-view{
+	overflow: hidden;
+}
+.add-this{
+	float: left;
+}
+#nx-product-details-view .addthis_toolbox.addthis_default_style {
+    width: 340px;
+}
+h1.nx-product-details-title{
+	color: #ca3b0f;
+	font-size: 18px;
+}
+.nx-product-short-description{
+	font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.nx-product-details-left-pane{
+	width: 355px;
+	float: left;
+}
+.nx-main-image-wrapper{
+	width: 250px;
+	height: 230px;
+	float: left;
+	border: 1px solid #cdc4ad;
+}
+.nx-main-image-wrapper img{
+	width: 250px;
+	height: auto;
+}
+.additional-images{
+	overflow: hidden;
+	float: left;
+	margin: 0 0 0 5px;
+}
+.additional-images img {
+    height: auto;
+    margin-right: 8px;
+    width: 60px;
+}
+
+.nx-link-left-pane{
+	float: left;
+	overflow: hidden;
+}
+.nx-link-left-pane p{
+	margin-top: 10px;
+}
+.nx-link-left-pane a{
+	text-decoration: none;
+	color: #c7512c;
+	font-size: 11px;
+}
+p.learn-more{
+	background: url("../images/learn-more.png") no-repeat center left;
+	padding-left:25px; 
+}
+p.read-reviews{
+	background: url("../images/read-reviews.png") no-repeat center left;
+	padding-left: 25px;
+}
+/*********  Right pane  ************/
+.nx-product-details-right-pane{
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+/*** custom field ****/
+.nx-product-fields{
+	overflow: hidden;
+}
+
+.product-field{
+	margin-bottom: 12px;
+}
+span.product-fields-title{
+	font-weight: normal;
+	font-size: 13px;
+	color: #333;
+	font-family: arial;
+	width: 135px;
+	float: left;
+	display: block;
+}
+span.product-field-display{}
+
+span.product-field-display select{
+	width: 180px;
+	font-size: 13px;
+	color: #333;
+	font-family: arial;
+}
+/**** Review *****/
+.write-reviews{
+	text-align: left;
+}
+.write-reviews span{
+	font-size: 12px;
+	color: #555;
+	font-family: 'Open Sans',sans-serif;
+}
+span.stars-orange{
+	max-width: 120px;	
+}
+.write-reviews h4{
+	text-align: center;
+	font-size: 12px;
+	color: #555;
+	font-family: 'Open Sans',sans-serif;
+}
+.write-reviews input[value="Review"]{
+	background: url("../images/nx-button.png") no-repeat center top;
+	border: none;
+	width: 95px;
+	height: 35px;
+	cursor: pointer;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	padding-top: 0;
+	font-weight: bold;
+}
+
+.customer-reviews h2{
+	background: none repeat scroll 0 0 #EA6F23;
+    color: #fff;
+    float: left;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 10px;
+}
+
+.write-reviews textarea#comment{
+	width: 95%;
+}
+.list-reviews{
+	clear: both;
+}
+
+.list-reviews .normal{
+	margin-top: 10px;
+}
+
+/**** Banner *****/
+.banner-bottom-detail {
+    margin-top: 40px;
+}
+/** Cart **/
+.nx-product-details-right-pane .nx-addtocart-area{}
+.nx-product-details-right-pane .addtocart-bar{}
+label.quantity_box{
+	float: left;
+	margin: 15px 10px 0 0;
+}
+span.quantity-box{
+	width: 50px;
+	margin-top: 5px;
+}
+.quantity-box input.quantity-input{
+	width: 50px;
+	border-radius:0; 
+}
+
+span.quantity-controls{
+	margin-top: 5px;
+}
+.quantity-minus{
+	background: url("../images/quantity-minus.png") no-repeat center 0 !important;
+}
+.quantity-plus{
+	background: url("../images/quantity-plus.png") no-repeat center 0 !important;
+}
+
+.nx-product-details-right-pane span.addtocart-button{
+	margin-left: 35px;
+}
+
+.nx-product-details-right-pane input.addtocart-button{
+	background: url("../images/add-mybag-detail.png") no-repeat center top !important;
+	border: none !important;
+	width: 145px !important;
+	text-indent: -999em;
+	height: 40px !important;
+}
+
+.nx-product-prices .PricesalesPrice{
+	float: left;
+}
+.nx-product-prices span.PricesalesPrice {
+	color: #bc2c00;
+	font-size: 25px;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.nx-product-prices .PricepriceWithoutTax{
+	float: left;
+	margin: 3px 0 0 5px;
+}
+
+.nx-product-prices span.PricepriceWithoutTax{
+	color: #666;
+	text-decoration: line-through;
+	font-size: 17px;
+	font-family: arial;
+	display: block;
+}
+
+div.PricediscountedPriceWithoutTax,
+span.PricediscountedPriceWithoutTax{
+	display: none !important;
+}
+.nx-shipped-fresh{
+	overflow: hidden;
+	float: right;
+}
+/*** Icon ***/
+.nx-icons{
+	overflow: hidden;
+	float: right;
+	margin: 15px 0 20px;
+}
+
+.nx-icons a{
+	padding: 5px 8px 0;
+	border-right: 1px solid #ccc; 
+}
+
+.nx-icons a[title=Email]{
+	border-right:none; 
+}
+/***** Detail Bottom *****/
+#detail-bottom{
+	clear: both;
+	overflow: hidden;
+}
+.netbase_detail_bottom{
+	overflow: hidden;
+	float: left;
+	width: 62%;
+}
+.nx-product-description{
+	float: left;
+	overflow: hidden;
+	width: 425px;
+	margin-top: 20px;
+}
+
+.nx-product-description p{
+	text-align: justify;
+	line-height: 20px;
+}
+
+.nx-related-product{
+	float: left;
+	width: 30%;
+	margin-left: 50px;
+}
+.nx-product-related-products{
+	position: relative;
+	overflow: hidden;
+	width: 217px;
+}
+.nx-product-related-products h4{
+	font-size: 15px;
+	color: #666;
+	margin-bottom: 30px;
+} 
+.product-field-type-R{}
+.product-field-type-R img{
+	border: 1px solid #ccc;
+	border-radius:5px;
+}
+
+.product-field-type-R img.new-product{
+	border: none;
+	position: absolute;
+	right: 5px;
+    top: 30px;
+}
+
+span.product-field-display a{
+	text-decoration: none;
+	color: #D03E11;
+    font-size: 18px;
+}
+
+p.nx-name-product{
+	float: right;
+	margin-right: 20px;
+}
+
+.related-product-price{
+	float: right;
+    overflow: hidden;
+}
+p.related-pro-price,
+p.related-product-price-new{
+	color: #BC2C00;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+p.related-product-price-old{
+	color: #666666;
+    font-family: arial;
+    font-size: 16px;
+    text-decoration: line-through;
+    margin:0 20px 0 5px;
+}
+.nx-product-related-products .nx-addtocart-area{
+	overflow: hidden;
+	float: right;
+}
+.nx-product-related-products .nx-addtocart-area span.quantity-box,
+.nx-product-related-products .nx-addtocart-area span.quantity-controls{display: none;}
+.nx-product-related-products input.addtocart-button{
+	background: url("../images/add-bag.png") no-repeat scroll 0 0 transparent !important;
+    border: medium none !important;
+    cursor: pointer;
+    height: 25px;
+    text-indent: -999em;
+    width: 75px !important;
+    float: right;
+    margin-right: 20px;
+}
+
+.content.my-groovy-style a.continue {
+    background: url("../images/nx-showcart-2.png") no-repeat scroll center top transparent;
+    height: 36px;
+    padding: 10px 12px;
+    vertical-align: middle;
+    width: 166px;
+}
+.content.my-groovy-style a.showcart.floatright {
+    background: url("../images/nx-continue-2.png") no-repeat scroll center top transparent;
+    height: 26px;
+    margin-top: -10px;
+    padding: 10px 12px;
+    width: 62px;
+}
+div.content.my-groovy-style {
+    padding: 20px !important;
+    width: 400px !important;
+    height: auto !important;
+}
+.content.my-groovy-style > div > div {
+    clear: both;
+    margin-top: 20px;
+}
+.content.my-groovy-style a.showcart.floatright, .content.my-groovy-style a.continue {
+    color: #FFFFFF;
+    font-family: arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#facebox .close {
+    background: url("../images/nx-close.png") no-repeat scroll 0 0 transparent !important;
+    height: 24px;
+    opacity: 0.3;
+    padding: 2px;
+    position: absolute;
+    right: -16px !important;
+    top: -12px !important;
+    width: 24px;
+}
+
+/********************* Cart ********************/
+.cart-view {
+    margin-top: 25px;
+}
+.nx-title-cart {
+    font-size: 18px;
+}
+h2.nx-connect-form {
+    background: none repeat scroll 0 0 #D4D4D4;
+    color: #333333;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-transform:none;
+    font-weight: normal;
+}
+.nx-cart-view-header {
+    padding: 10px 0;
+}
+
+.cart-view a.continue_link {
+    background:none repeat scroll 0 0 #CA3B0F;
+    border: 0 none;
+    color: #fff;
+    font-family: arial;
+    font-size: 13px;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 5px 5px 5px 5px;
+}
+#checkoutbar.active, #checkoutbar a {
+    border: 0 none;
+    color: #222222;
+    font-size: 12px;
+}
+#checkoutbar {
+    border: 1px thin solid #A5A5A5;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.checkout-content {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding: 15px 10px;
+}
+
+.checkout-content a{
+	text-decoration: none;
+	color: #CA3B0F;
+	padding: 5px 10px;
+	background: #EADECE;
+}
+
+
+.checkout-content, .checkout-content-cart {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+.nx-component form[name="com-login"] input.inputbox{
+	border: 1px solid #CCCCCC;
+    padding: 3px 8px;
+    width: 150px;
+    margin-left: 10px;
+}
+input.default{
+	background: url("/assets/button-login.png") no-repeat center top;
+	width: 70px;
+	height: 30px;
+	border: none;
+	text-indent: -999em;
+	cursor: pointer;
+}
+a.forgot-account{
+	margin-left: 10px;
+}
+a.forgot {
+    color: #333333;
+    font-family: arial;
+    font-size: 12px;
+    text-decoration: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+input#remember {
+    width: 0;
+    vertical-align: middle;
+}
+
+.billto-shipto a.details, 
+.billto-shipto a.details:hover{
+	color: #D03E11;
+	background: #fff;
+	padding: 3px 10px;
+}
+.nx-checkout-view{
+	border: 1px solid #d7d3bf;
+	border-radius: 5px; 
+}
+
+.billto-shipto{
+	padding: 10px 10px 25px !important;
+}
+.nx-checkout-view > form#form-login{
+	padding: 10px;
+}
+
+input.button[value="Logout"]{
+	background: url("../images/nx-button-2.png") no-repeat center top;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	border-radius:4px;
+	width: 70px;
+	height: 28px;
+}
+/************/
+.cart-view fieldset{
+	border: none;
+	padding: 0 !important;
+}
+
+.cart-view fieldset >table >tbody >tr{
+	display: block;
+}
+
+.cart-view fieldset >table >tbody >tr.row-title{
+	background: #d4d4d4
+}
+.cart-view fieldset >table >tbody >tr.row-title >th{
+	background: #d4d4d4;
+	color: #808080;
+}
+.cart-view fieldset >table >tbody >tr >th,
+.cart-view fieldset >table >tbody >tr >td{
+	width: 150px;
+	
+}
+tr#product-display-cart{
+	margin: 10px;
+	border: 1px solid #b5b5b5;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+th.product-sku, td.product-sku,
+th.product-tax, td.product-tax{width: 5px !important;}
+
+td.product-name{
+	text-align: left;
+}
+td.product-price,
+td.total-price{
+	text-align: center;
+}
+td.product-name a{
+	text-decoration: none;
+	color: #ca3b0f;
+	font-size: 14px;
+	font-weight: bold;
+}
+td.product-price div.PricebasePriceVariant{
+	padding-left: 16px;
+    text-align: left;
+    font-size: 15px;
+}
+td.product-price div.PricediscountAmount{
+	color: #777;
+}
+td.product-price,
+td.product-quantity,
+td.product-discount,
+td.total-price{
+	padding-top: 25px;
+}
+
+td.product-quantity input.inputbox{
+	border: 1px solid #abadb3;
+}
+td.product-quantity input.vm2-add_quantity_cart{
+	background: url("../images/product-update.png") no-repeat 0 0;
+	width: 24px;
+	height: 24px;
+}
+td.product-quantity a.vm2-remove_from_cart{
+	background: url("../images/product-delete.png") no-repeat 0 0;
+	width: 24px;
+	height: 24px;
+}
+td.total-price div.PricesalesPrice span.PricesalesPrice{
+	padding-left:65px; 
+	margin: 0;
+	color: #d34444;
+}
+span.cart-images img{
+	height: auto;
+    width: 90px;
+    margin-top: 5px;
+}
+td.product-discount div.PricediscountAmount span.PricediscountAmount{
+	font-size: 17px;
+	display: block;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+td.product-quantity{
+	text-align: right;
+}
+tr#total-price-products{
+	margin-top: 5px;
+}
+tr#total-price-products >td + td +td +td{
+	color: #777777;
+    font-size: 18px;
+}
+span.PricebillDiscountAmount{
+	font-size: 17px;
+    padding-right: 24px;
+}
+
+span.PricebillTotal{
+	color: #CA3B0F;
+    font-size: 20px;
+}
+
+tr.sectiontableentry1{margin-left:10px }
+.vmpayment_name {
+    display: block;
+    width: 150px;
+}
+tr.sectiontableentry2 td.coupon-product{
+	float: right;
+	width: 220px;
+	margin-top: 10px;
+}
+#userForm{}
+input.coupon{
+	float: left;
+	padding: 5px;
+	font-size: 11px;
+}
+.details-button{
+	float: left;
+}
+
+span.details-button input.details-button{
+	background: url("../images/nx-button-2.png") no-repeat 0 0 !important;
+	color: #fff !important;
+	font-size: 12px;
+	font-weight: bold;
+	width: 70px !important;
+	height: 28px !important;
+	border: medium none !important;
+	padding-bottom: 7px !important;
+	display: block;
+	margin-top: -2px;
+}
+/****/
+form#checkoutForm{
+	 padding: 10px 30px 30px 10px;
+	 position: relative;
+}
+.checkout-button-top{
+	border-top: none !important;
+	margin-top: 30px;
+}
+a.vm-button-correct{
+	background: url("../images/check-out-cart.png") no-repeat 0 0 !important;
+	width: 145px !important;
+	height: 35px !important;
+	border: none !important;
+	text-indent: -999em;
+}
+
+.customer-comment{
+	float: left;
+	width: 365px;
+}
+div.customer-comment{
+	border-top:none; 
+	width: 100%;
+}
+span.comment{
+	float: left;
+	font-weight: bold;
+	color: #666;
+}
+.nx-cart-delivery{
+	float: right;
+	width: 250px;
+}
+
+.nx-cart-delivery h2{
+	color: #ce481f;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.nx-cart-delivery .delivery {
+	margin-bottom: 15px;
+}
+.nx-cart-delivery .delivery label{
+	width: 85px;
+	float: left;
+	font-size: 13px;
+    color: #333;
+}
+.nx-cart-delivery .delivery select{
+	width: 120px;
+}
+
+.nx-cart-delivery .city{
+	background: url("../images/delivery-city.png") no-repeat center left;
+	padding-left: 40px;
+}
+.nx-cart-delivery .date{
+	background: url("../images/delivery-date.png") no-repeat center left;
+	padding-left: 40px;
+}
+.nx-cart-delivery .time{
+	background: url("../images/delivery-time.png") no-repeat center left;
+	padding-left: 40px;
+}
+
+/**********/
+#userForm .control-buttons button{
+	margin: 10px 0;
+}
+#userForm .control-buttons button.vm-button-correct{
+	background: url("../images/nx-button-3.png") repeat-x center top;
+	border: 2px solid #e2e2e2;
+	border-radius:6px; 
+	display: inline-block;
+	height: 29px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
+#userForm .control-buttons button.default{
+	background: url("../images/nx-button-3.png") repeat-x 0 0 ;
+	vertical-align: middle;
+	margin-right: 10px;
+	border: 2px solid #E2E2E2;
+	border-radius:7px;
+	color: #fff;
+	font-weight: bold;
+	height: 29px;
+	padding-top: 2px;
+}
+
+.nx-component fieldset {
+    border: 1px solid #D3D3D3;
+    margin-top: 20px;
+    padding: 10px;
+}
+.nx-component fieldset h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#userForm table.user-details label{
+	width: 150px;
+	float: left;
+}
+
+.vmorder-done {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    margin: 10px 0;
+    padding: 10px;
+}
+/****** Tab Descriptions ******/
+
+.tab-container >div > table {
+    border-color: #CCCCCC;
+}
+.tab-container >div > table > tbody > tr > td,
+.tab-container >div > table > tbody > tr > th{
+	padding: 7px;
+	border-color: #ccc;
+}
+
+.etabs {
+	margin: 0; 
+	padding: 0 0 2px; 
+	border-bottom: 1px solid #A43510;
+}
+.tab { 
+	display: inline-block; 
+	zoom:1; 
+	border: 1px solid #FFFFFF;
+    width: 100px; 
+
+}
+.tab a { 
+	font-size: 14px; 
+	line-height: 2em; 
+	display: block; 
+	padding: 0 10px; 
+	outline: none; 
+	color: #A43510;
+	text-align: center;
+}
+
+.tab.active { 
+	background: none repeat scroll 0 0 #A43510;
+    border: 1px solid #A43510;
+    color: #FFFFFF;
+    font-weight: bold; 
+    border-radius: 4px 4px 0 0;    
+}
+.tab a.active { 
+	font-weight: bold; 
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.tab-container >div{
+	width: 100%;
+	padding: 10px 0;
+}
+
+div#cmsmart_size > table{
+	width: 100%;
+}
+.tab-container .panel-container { 
+	background: #fff; 
+	border: solid #666 1px; 
+	padding: 10px; 
+	-moz-border-radius: 0 4px 4px 4px; 
+	-webkit-border-radius: 0 4px 4px 4px; 
+}

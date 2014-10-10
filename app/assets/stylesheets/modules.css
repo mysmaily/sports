@@ -1,0 +1,49 @@
+/****** NewsLetter ******/
+div.acymailing_module{
+	float: left;
+    width: 375px;
+}
+span.acymailing_introtext{
+	float: left;
+	color: #5b5b5b;
+	font-size: 11px;
+	font-family: arial;
+	margin-top: 10px;
+}
+table.acymailing_form{
+	float: left;
+	margin-top: 4px !important;
+}
+td.acyfield_email input{
+	width: 133px;
+	padding: 2px 8px;
+	border: 1px solid #c8c8c8;
+	margin: 0 3px;
+}
+td.acysubbuttons input.subbutton{
+	background: url("../images/button-newsletter.png") no-repeat 0 0;
+	width: 76px;
+	height: 24px;
+	text-indent: -999em;
+	cursor: pointer;
+	border: none;
+}
+
+/****** Share *******/
+div.addthis_toolbox{
+	float: right;
+    margin: 20px 6px;
+    width: 245px;
+}
+
+/****** Module Cart *******/
+/* #vmCartModule{
+	height: 60px;
+    overflow-y: scroll;
+} */
+
+/**** Module Left ****/
+.nx-menu-left > .moduletable + .moduletable,
+.nx-menu-left > .moduletable + .moduletable + .moduletable{
+	margin-top: 30px;
+}
