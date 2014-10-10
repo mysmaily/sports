@@ -314,7 +314,11 @@ input#nx-remember{
 button.nx-validate,
 button.nx-button{
 	margin:10px 0 10px 16px;
+<<<<<<< HEAD
 	background: url("/assets/nx-button.png") no-repeat 0 0;
+=======
+	background: url("../images/nx-button.png") no-repeat 0 0;
+>>>>>>> f01d88f81704b51ecccbabf7abb64b4c96a6ba6a
 	height: 35px;
 	width: 95px;
 	cursor: pointer;
@@ -358,7 +362,11 @@ table.user-details select{
 }
 
 .buttonBar-right button.button{
+<<<<<<< HEAD
 	background: url("/assets/nx-button.png") no-repeat center top;
+=======
+	background: url("../images/nx-button.png") no-repeat center top;
+>>>>>>> f01d88f81704b51ecccbabf7abb64b4c96a6ba6a
 	color: #fff;
 	cursor: pointer;
 	width: 95px;
@@ -396,7 +404,11 @@ form#contact-form textarea, form#contact-form input {
     padding: 3px 8px;
 }
 form#contact-form button {
+<<<<<<< HEAD
     background: url("/assets/nx-button.png") no-repeat scroll 0 0 transparent;
+=======
+    background: url("../images/nx-button.png") no-repeat scroll 0 0 transparent;
+>>>>>>> f01d88f81704b51ecccbabf7abb64b4c96a6ba6a
     border: 0 none;
     color: #fff;
     cursor: pointer;

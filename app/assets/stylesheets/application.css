@@ -22,6 +22,10 @@
  *= require style3
  *= require camera
  *= require dropdown_menu_left
+<<<<<<< HEAD
  *= require skin.featured
  *= require vmsite-ltr
+=======
+ *= reqiore skin.featured
+>>>>>>> f01d88f81704b51ecccbabf7abb64b4c96a6ba6a
  */
