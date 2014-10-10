@@ -1,0 +1,96 @@
+.ac_results {
+	padding: 0px;
+	border: 1px solid #999;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 5px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 14px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+	position: relative;
+	font-weight: bold;
+}
+
+.ac_loading {
+	background: white url('../images/indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #F6CB66;
+	color: white;
+}
+
+.ac_results a.product_link {
+	margin-left: 80px;
+	min-height: 60px;
+	display: block;
+	float: left;
+}
+.ac_results a.product_link img{
+	position: absolute;
+	width: 60px;
+	left: 5px;
+	top: 5px;
+	border: 1px solid #D3D3D3;
+    border-radius: 4px 4px 4px 4px;
+}
+.ac_results span.PricepriceWithoutTax {
+	color: red;
+	font-size: 95%;
+}
+
+/********/
+input#product_suggest{
+	width: 202px;
+	color: #BEBEBE;
+	padding: 5px 10px;
+	float: left;
+	border: medium none;
+}
+
+#sub-search {
+	background: url("../images/nx-search.png") no-repeat scroll 0px 0px
+		transparent;
+	border: 0px none;
+	height: 28px;
+	position: absolute;
+	width: 70px;
+	cursor: pointer;
+	left: 536px;
+	top: 70px;
+	color: #FFFFFF;
+	padding: 0px 0px 4px 4px;
+}

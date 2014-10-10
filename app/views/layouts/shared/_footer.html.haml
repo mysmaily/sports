@@ -1,0 +1,133 @@
+#nx-footer
+  .nx-left-footer
+    .nx-copyright
+      .custom
+        %h2 Certified By
+        %p
+          %img{:alt => "", :border => "0", :src => "/vmdemo/bakerymart/images/banner-copyright.jpg"}/
+      %p
+        All trademarks, logos and names are properties of their respective owners.
+        Copyright 2012 @
+        = succeed "." do
+          %a{:href => "http://www.cmsmart.net"} cmsmart.net
+        %span
+          %a{:href => "http://www.cmsmart.net"} cmsmart.net
+          | A Grass Roots Group
+        PLC Company
+      %p @ 2011-2012 NETBASE.VN
+    .nx-connect
+      .custom
+        %h2 Let's Connect
+        %p
+          %img{:alt => "connect", :border => "0", :src => "/vmdemo/bakerymart/images/connect.jpg"}/
+  / End left-footer
+  .nx-right-footer
+    .nx-menu-footer
+      .user-4
+        .moduletable
+          %h3 Apply For
+          %ul.menu
+            %li.item-151
+              %a{:href => "/vmdemo/bakerymart/index.php/retail-franchisee"} Retail Franchisee
+            %li.item-152
+              %a{:href => "/vmdemo/bakerymart/index.php/manufacturing"} Manufacturing
+            %li.item-153
+              %a{:href => "/vmdemo/bakerymart/index.php/franchisee"} Franchisee
+            %li.item-154
+              %a{:href => "/vmdemo/bakerymart/index.php/distributor"} Distributor
+            %li.item-155
+              %a{:href => "/vmdemo/bakerymart/index.php/superstockiest"} Superstockiest
+            %li.item-156
+              %a{:href => "/vmdemo/bakerymart/index.php/affiliate-program"} Affiliate Program
+      / End user-4
+      .user-5
+        .moduletable
+          %h3 Corporate Info
+          %ul.menu
+            %li.item-157
+              %a{:href => "/vmdemo/bakerymart/index.php/order"} Order
+            %li.item-158
+              %a{:href => "/vmdemo/bakerymart/index.php/about"} About Us
+            %li.item-159
+              %a{:href => "/vmdemo/bakerymart/index.php/media-room"} Media Room
+            %li.item-160
+              %a{:href => "/vmdemo/bakerymart/index.php/responsibility"} Responsibility
+            %li.item-161
+              %a{:href => "/vmdemo/bakerymart/index.php/blog"} Blog
+            %li.item-162
+              %a{:href => "/vmdemo/bakerymart/index.php/monginis-in-news"} Monginis in News
+      / End user-5
+      .user-6
+        .moduletable
+          %h3 Customer Service
+          %ul.menu
+            %li.item-163
+              %a{:href => "/vmdemo/bakerymart/index.php/contact"} Contact Us
+            %li.item-164
+              %a{:href => "/vmdemo/bakerymart/index.php/faqs"} FAQs
+            %li.item-165
+              %a{:href => "/vmdemo/bakerymart/index.php/blogs"} Blogs
+            %li.item-166
+              %a{:href => "/vmdemo/bakerymart/index.php/monginis"} Monginis in News
+            %li.item-167
+              %a{:href => "/vmdemo/bakerymart/index.php/corporate-tie-up"} Corporate Tie Up
+            %li.item-168
+              %a{:href => "/vmdemo/bakerymart/index.php/store-locator"} Store Locator
+      / End user-6
+    / End Menu-Footer
+    .nx-newsletter
+      .moduletable
+        %h3 NewsLetters
+        #acymailing_module_formAcymailing84891.acymailing_module
+          #acymailing_fulldiv_formAcymailing84891.acymailing_fulldiv
+            %form#formAcymailing84891{:action => "/vmdemo/bakerymart/index.php", :method => "post", :name => "formAcymailing84891", :onsubmit => "return submitacymailingform('optin','formAcymailing84891')"}
+              .acymailing_module_form
+                %span.acymailing_introtext Sign Up for Our Newsletter:
+                %table.acymailing_form
+                  %tbody
+                    %tr
+                      %td.acyfield_email
+                        %input#user_email_formAcymailing84891.inputbox{:name => "user[email]", :onblur => "if(this.value=='') this.value='E-mail';", :onfocus => "if(this.value == 'E-mail') this.value = '';", :size => "15", :type => "text", :value => "E-mail"}/
+                      %td.acysubbuttons
+                        %input.button.subbutton{:name => "Submit", :onclick => "try{ return submitacymailingform('optin','formAcymailing84891'); }catch(err){alert('The form could not be submitted '+err);return false;}", :type => "submit", :value => "Subscribe"}/
+                %input{:name => "ajax", :type => "hidden", :value => "0"}/
+                %input{:name => "ctrl", :type => "hidden", :value => "sub"}/
+                %input{:name => "task", :type => "hidden", :value => "notask"}/
+                %input{:name => "redirect", :type => "hidden", :value => "http%3A%2F%2Ftruemart.net%2Fvmdemo%2Fbakerymart%2F"}/
+                %input{:name => "redirectunsub", :type => "hidden", :value => "http%3A%2F%2Ftruemart.net%2Fvmdemo%2Fbakerymart%2F"}/
+                %input{:name => "option", :type => "hidden", :value => "com_acymailing"}/
+                %input{:name => "hiddenlists", :type => "hidden", :value => "1"}/
+                %input{:name => "acyformname", :type => "hidden", :value => "formAcymailing84891"}/
+    / END NEWSLETTER
+    .nx-share-footer
+      / AddThis Button BEGIN
+      .addthis_toolbox.addthis_default_style.addthis_32x32_style
+        %a.addthis_button_facebook.addthis_button_preferred_1.at300b{:href => "#", :title => "Facebook"}
+          %span.at300bs.at15nc.at15t_facebook
+            %span.at_a11y Share on facebook
+        %a.addthis_button_twitter.addthis_button_preferred_2.at300b{:href => "#", :title => "Tweet"}
+          %span.at300bs.at15nc.at15t_twitter
+            %span.at_a11y Share on twitter
+        %a.addthis_button_email.addthis_button_preferred_3.at300b{:href => "#", :target => "_blank", :title => "Email"}
+          %span.at300bs.at15nc.at15t_email
+            %span.at_a11y Share on email
+        %a.addthis_button_print.addthis_button_preferred_4.at300b{:href => "#", :title => "Print"}
+          %span.at300bs.at15nc.at15t_print
+            %span.at_a11y Share on print
+        %a.addthis_button_compact.at300m{:href => "#"}
+          %span.at300bs.at15nc.at15t_compact
+            %span.at_a11y More Sharing Services
+        %a.addthis_counter.addthis_bubble_style{:href => "#", :style => "display: inline-block;"}
+        %a.addthis_button_expanded{:href => "#", :target => "_blank", :title => "View more services"} 0
+        %a.atc_s.addthis_button_compact
+          %span
+        .atclear
+      :javascript
+        var addthis_config = {"data_track_addressbar":false};
+      %script{:src => "http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-506c066f69061863", :type => "text/javascript"}
+      #_atssh{:style => "visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;"}
+        %iframe#_atssh903{:src => "//ct1.addthis.com/static/r07/sh175.html#iit=1412918612912&tmr=load%3D1412918610824%26core%3D1412918611400%26main%3D1412918612902%26ifr%3D1412918612916&cb=0&cdn=1&chr=UTF-8&kw=&ab=-&dh=truemart.net&dr=http%3A%2F%2Fcmsmart.net%2Fdemo%2Fbakerymart-virtuemart-template&du=http%3A%2F%2Ftruemart.net%2Fvmdemo%2Fbakerymart%2F&dt=Welcome%20to%20BakeryMart&dbg=0&md=0&cap=tc%3D0%26ab%3D0&inst=1&vcl=1&jsl=1&prod=true&lng=en-US&ogt=&pc=men&pub=ra-506c066f69061863&ssl=0&sid=54376d53e278c84a&srpl=1&srcs=1&srd=1&srf=1&srx=1&ver=300&xck=0&xtr=0&og=&aa=0&csi=undefined&rev=6.2&ct=1&xld=1&xd=1", :style => "height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;", :title => "AddThis utility frame"}
+      %script{:src => "http://ct1.addthis.com/static/r07/core158.js", :type => "text/javascript"}
+      / AddThis Button END
+    / END Share-footer
+  / End right-footer

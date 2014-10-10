@@ -1,0 +1,190 @@
+/**
+ * @version		$Id$
+ * @author		Joomseller
+ * @package		Joomla!
+ * @subpackage	Mod_DropDown_MooMenu
+ * @copyright	Copyright (C) 2008 - 2011 by Joomseller Solutions. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl.html GNU/GPL version 3
+ */
+ 
+/* Clearfix
+-------------------------------------------------------------*/
+#js-mainnav { 
+    background-color: #fff; /* you can change/delete the transparent gradient image or the background color */
+ /* you can change the color of the border */
+} 
+
+/* lv - 0
+-----------------------------------*/
+/* Styling ---*/
+ul.level0 { 
+    border-right: #014E72; /* you can remove/comment this line or move the border to the left*/ 
+} 
+ul.level0 li.mega {
+	background: url("../../images/nx-menu-bg.png") no-repeat scroll left center transparent;
+	margin-left: 4px;
+}
+ul.level0 >li.mega >a.mega { 
+	color: #CA3B0F;
+    height: 21px;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 13px;
+    padding: 8px 25px;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+ul.level0 li.over, 
+ul.level0 li.haschild-over { 
+    /* background-color: #006699 */; /* you can change/remove the transparent gradient or the color */
+}
+
+ul.level0 li.active { 
+    background-color: #fff;
+    color: #FF3C3A;
+} 
+ul.level0 li #current.active {
+	background: none;
+	color: #FF3C3A;
+}
+/* lv - 1 and below
+-----------------------------------*/
+
+/* Layout ---*/
+
+ /* Columns ---*/
+.megacol { float: left;  border-top: 1px solid #d3d3d3;}
+/* Styling ---*/
+ul.level1 li.mega { border-top: 1px dotted #d3d3d3; background: none;line-height: 7px; }
+
+ul.level1 li.first { border-top: 0; }
+
+ul.level1 li.mega a.mega {
+	background: none;
+	border: 0;
+	color: #444;
+}
+ul.level1 li.mega a.mega span.menu-title { background: none; padding-left: 5px; padding-top: 10px;}
+
+ul.level1 li.over, 
+ul.level1 li.haschild-over { background: #fff; } 
+
+ul.level1 li.haschild,
+ul.level1 li.haschild-over {
+	background-image: url(../../images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	padding: 0;
+}
+
+ul.level1 li.group { background: none; }
+
+ /* CHILD CONTENT
+-----------------------------------*/
+
+.childcontent-inner {
+	background-color:#fff; /*change here the color to match the new color you have set for mainnav */
+	/* border-right: 1px solid #3A0700;
+    border-color: -moz-use-text-color #e8e8e8;
+	border-bottom: 4px solid #d9d9d9; */
+	color: #ccc; /* after changing code above, you might want to change this color to make the text color readable  */ 
+	border-bottom: 4px solid #CDC4AD;
+	border-left: 4px solid #CDC4AD;
+	border-right: 4px solid #CDC4AD;
+	border-radius: 5px;
+}
+.childcontent .js-moduletable {
+	color: #ccc;
+}
+.childcontent-inner .group ul li.active{
+/* 	background-color: #00527C !important; */
+}
+.childcontent .group h3 {
+	background: none;
+	color: #fff;
+	/* border-bottom: 1px dotted #006699; */
+}
+.childcontent .js-moduletable a {
+	color: #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+
+.childcontent .js-moduletable a:hover,
+.childcontent .js-moduletable a:focus,
+.childcontent .js-moduletable a:active {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+/* Grouped --- */
+.group-title {
+	border-bottom: 3px solid #C9C9C9;
+}
+.group-title .menu-title {
+	color: #999999;
+    font-family: open sans;
+    font-size: 12px;
+}
+
+.group-title .menu-desc {
+	color: #999;
+}
+/* reset --- */
+
+a#menu101 .has-image{
+	height: 29px;
+	text-indent: -999em;
+}
+div.column4 div.group div.group-content{
+	background: none repeat scroll 0 0 #FFE9EA;
+	padding: 5px;
+}
+div.column4 div.group div.group-content div.moduletable div.custom{
+	border: 1px dotted #D3D3D3;
+}
+
+div.column4 div.group div.group-content div.moduletable div.custom img{
+	float: left;
+    margin: 5px 10px;
+}
+
+.nx-latest-product-link a{
+	color: #D03E11 !important;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nx-latest-product-link p.PricesalesPrice{
+	color: #CE6444;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+}
+.group-content .custom img {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    width: 165px;
+    margin-left: 7px;
+}
+
+.group-content .custom >ul{
+	margin-top: 5px;
+}
+.group-content .custom > p {
+    color: #555555;
+    font-size: 14px;
+}
+.group-content .custom >ul >li{
+	line-height: 30px;
+	color: #333;
+}
+.custom >ul >li >a{
+	color: #F2AE49 !important;
+}
+
+.custom >ul >li:hover >a{
+	color: #CA3B0F !important;
+}

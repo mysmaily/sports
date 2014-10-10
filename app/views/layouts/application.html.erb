@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sport</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id = "nx-page">
+<%= render 'layouts/shared/header' %>
+<%= render 'layouts/shared/main_menu' %>
+
+<%= render 'layouts/shared/slide' %>
+
+<%= yield %>
+<%= render 'layouts/shared/footer' %>
+</div>
+</body>
+</html>
