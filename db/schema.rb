@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141010071434) do
+ActiveRecord::Schema.define(version: 20141012134154) do
+
+  create_table "articles", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "thumn_file_name"
+    t.string   "thumn_content_type"
+    t.integer  "thumn_file_size"
+    t.datetime "thumn_updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

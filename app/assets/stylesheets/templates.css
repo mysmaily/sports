@@ -322,7 +322,7 @@ p.intro-items{
     color: #d8a252;
 }
 p.read-more{
-    background: url("../images/nx-button.png") no-repeat center 0;
+    background: url("/assets/nx-button.png") no-repeat center 0;
     height: 35px;
     width: 95px;
     border: none;

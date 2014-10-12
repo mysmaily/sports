@@ -1,0 +1,8 @@
+locale:
+  languages:
+    - code: VN
+      display_name: 'Viet Nam'
+    - code: EN
+      display_name: 'English'
+data:
+  perpage: 3

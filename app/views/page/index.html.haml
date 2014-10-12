@@ -1,5 +1,3 @@
-= render 'layouts/shared/slide'
-
 #nx-container-bottom
   #nx-left-sidebar
     .nx-menu-left
@@ -157,27 +155,21 @@
   #nx-content
     .nx-content-top
       .moduletable
-        %h3 WELL COME TO OUR SITE!
+        %h3 
+          = link_to @article_last.try(:title), article_path(@article_last)
         .custom
           .content-leading
-            %img{:alt => "leading", :border => "0", :src => "/vmdemo/bakerymart/images/content-leading.jpg"}/
-            %p.intro At Aroma we believe that bread should always be healthy and natural. That's why our delicious breads are baked fresh every day using a sourdough base with no added sugar, preservatives or cholesterol. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel tortor vitae nibh condimen.
+            %img{:alt => "leading", :border => "0", :src => @article_last.thumn.url, width: '120px', height: '95px'}/
+            %p.intro 
+              = @article_last.description
+        - @articles.each do |article|
           .content-items-1
-            %img{:alt => "birthday-cake", :border => "0", :src => "/vmdemo/bakerymart/images/birthday-cake.jpg"}/
-            %p.intro-items Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel tortor...
+            %img{:alt => "birthday-cake", :border => "0", :src => article.thumn.url, width: '200px', height: '125px'}/
+            %p.intro-items 
+              = article.description
             %p.read-more
-              %a{:href => "/vmdemo/bakerymart/index.php/retail-franchisee"} Read More
-          .content-items-2
-            %img{:alt => "birthday-cake", :border => "0", :src => "/vmdemo/bakerymart/images/stollen.jpg"}/
-            %p.intro-items Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel tortor...
-            %p.read-more
-              %a{:href => "/vmdemo/bakerymart/index.php/manufacturing"} Read More
-          .content-items-3
-            %img{:alt => "birthday-cake", :border => "0", :src => "/vmdemo/bakerymart/images/all-taste.jpg"}/
-            %p.intro-items Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris vel tortor...
-            %p.read-more
-              %a{:href => "/vmdemo/bakerymart/index.php/affiliate-program"} Read More
-    / End content-top
+              %a{:href => article_path(article)} Read More
+        - will_paginate @articles
     .clear-fix
     .nx-component
       #system-message-container
