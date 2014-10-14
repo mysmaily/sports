@@ -1,0 +1,106 @@
+#all_manu_s {
+	height: auto;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+img{border:0px;
+}
+#all_manu_s #khung_mn_s {
+	height: 32px;
+    cursor: pointer;
+    display: none;
+}
+#all_manu_s #khung_mn_s #bgm_s {
+	float: left;
+	height: 32px;
+	width: 4px; 
+    border: 1px solid #949496;
+    border-right: none;
+}
+#all_manu_s #khung_mn_s #btb_s {
+	float: left;
+	height: 32px;
+	width: 4px;
+    border: 1px solid #949496;
+    border-left: none;
+}
+.icon_bt_s {
+	height: 9px;
+	width: 9px;
+	background-image: url(icon_bt.jpg);
+	float: left;
+	margin-top: 12px;
+	margin-left: 9px;
+	margin-right: 12px;
+}
+#all_manu_s #khung_mn_s #menu_s {
+	float: left;
+	height: 32px;
+	width: 227px;
+	background-image: url(MENU_MR_03.jpg);
+	text-decoration: none;
+    cursor: pointer;
+}
+#all_manu_s #khung_mn_s #bth_s {
+
+    border-top: 1px solid #949496;
+    border-bottom: 1px solid #949496;
+	height: 32px;
+	width: auto;
+	float: left;
+}
+
+.thm-12-b-blk_s {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	line-height: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	height: auto;
+	width: auto;
+	padding-left: 25px;
+	text-decoration: none;
+	font-variant: normal;
+}
+.thm_12_b_black_s {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	height: 23px;
+	width: auto;
+	margin-left: 4px;
+	float: left;
+	margin-top: 9px;
+	margin-right: 8px;
+}
+
+
+#all_manu_s #pop_up_s {
+	float: left;
+	height: auto;
+	width: 266px;
+	clear: both;
+}
+
+.vmgroup22{
+	border: 0 solid red;
+    margin: 0 auto;
+    width: 265px;
+}
+
+#manufacturer_vm_s img {
+    border: 1px solid #999999;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    height: 150px;
+    width: 200px;
+}

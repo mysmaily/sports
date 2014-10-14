@@ -6,3 +6,4 @@ locale:
       display_name: 'English'
 data:
   perpage: 3
+sale_off: 1000

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141012134154) do
+ActiveRecord::Schema.define(version: 20141014080823) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -23,6 +23,30 @@ ActiveRecord::Schema.define(version: 20141012134154) do
     t.string   "thumn_content_type"
     t.integer  "thumn_file_size"
     t.datetime "thumn_updated_at"
+  end
+
+  create_table "photos", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.integer  "product_id"
+  end
+
+  create_table "products", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "price"
+    t.boolean  "home"
+    t.integer  "price_saleoff"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "thum_file_name"
+    t.string   "thum_content_type"
+    t.integer  "thum_file_size"
+    t.datetime "thum_updated_at"
   end
 
   create_table "users", force: true do |t|

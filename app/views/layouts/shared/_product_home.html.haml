@@ -1,0 +1,52 @@
+.nx-component
+  #system-message-container
+  .nx-topten-view
+    %h2.nx-topten-title.nx-title NEW PRODUCTIONS!
+    %ul#nx-items2
+      - @products.each do |t|
+        %li
+          %img.nx-topten-image{:src => "/vmdemo/bakerymart/templates/bakerymart/html/com_virtuemart/assets/images//new-product.png"}/
+          .nx-topten-product-picture
+            %a{:href => product_path(t)}
+              %img.featuredProductImage{:alt => t.name, :border => "0", :src => t.thum.url(:small)}/
+          .nx-topten-product-info
+            .nx-topten-product-link
+              %a{:href => product_path(t), :title => t.name}
+                = t.name
+            .nx-product-sdec
+              %p
+                = t.description.split[0..6].join(" ")
+            .nx-topten-product-price
+              .PricesalesPrice{:style => "display : block;"}
+                \ 
+                %span.PricesalesPrice
+                  = "$"+"#{t.price_saleoff}"
+              .PricepriceWithoutTax{:style => "display : block;"}
+                \ 
+                %span.PricepriceWithoutTax
+                  = "$"+"#{t.price}"
+              .PricetaxAmount{:style => "display : none;"}
+                Tax amount:
+                %span.PricetaxAmount
+            .nx-addtocart-area
+              %form.product.js-recalculate{:action => "index.php", :method => "post"}
+                .addtocart-bar
+                  %label.quantity_box{:for => "quantity"}
+                  %span.quantity-box
+                    %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                  %span.quantity-controls
+                    %input.quantity-controls.quantity-minus{:type => "button"}/
+                    %br/
+                    %input.quantity-controls.quantity-plus{:type => "button"}/
+                  %span.addtocart-button
+                    %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                  .clear
+                %input.pname{:type => "hidden", :value => "Cream Chees Biscuits"}/
+                %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                %input{:name => "view", :type => "hidden", :value => "cart"}/
+                %noscript <input type="hidden" name="task" value="add" />
+                %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "2"}/
+                %input{:name => "virtuemart_manufacturer_id", :type => "hidden", :value => "5"}/
+                %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "1"}/
+              .clear
+          %div{:style => "clear: both;"}

@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Sport
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    #nx-page
+      = render 'layouts/shared/header'
+      = render 'layouts/shared/main_menu'
+      #nx-container-bottom
+        = render 'layouts/shared/menu_left'
+        = yield
+      = render 'layouts/shared/footer'
