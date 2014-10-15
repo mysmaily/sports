@@ -1,0 +1,13 @@
+#nx-content
+  .clear-fix
+  .nx-component
+    #system-message-container
+    .item-page
+      %h2
+        = @articles.title
+      .img-fulltext-left
+        %img{:alt => "", :src => @articles.thumn(:lager)}/
+      %p
+        %span
+          = @articles.content
+= link_to 'View all', articles_path

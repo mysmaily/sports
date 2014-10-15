@@ -21,4 +21,7 @@
           %li.mega.last
             %a#menu131.mega.last{:href => "/"}
               %span.menu-title Contact Us
-  = render 'layouts/shared/slideshow'
+  - if params[:controller] == 'page'
+    = render 'layouts/shared/slideshow'
+  - else
+    = render 'layouts/shared/sub_banner'

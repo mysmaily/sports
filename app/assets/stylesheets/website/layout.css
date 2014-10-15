@@ -19,7 +19,7 @@
 .product-2,
 .product-4{margin-left: 32px;}
 .product-images-1{
-	background: url("../images/product-1.jpg") no-repeat 0 0;
+	background: url("/assets/product-1.jpg") no-repeat 0 0;
 	width: 200px;
 	height: 200px;
 }
@@ -58,7 +58,7 @@ p.price-product{
 }
 
 button#nx-add-bag{
-	background: url("../images/add-to-bag.png") no-repeat 0 0;
+	background: url("/assets/add-to-bag.png") no-repeat 0 0;
 	width: 100px;
 	height:30px;
 	text-indent: -999em;
@@ -70,18 +70,18 @@ button#nx-add-bag{
 }
 
 .product-images-2{
-	background: url("../images/product-2.jpg") no-repeat 0 0;
+	background: url("/assets/product-2.jpg") no-repeat 0 0;
 	width: 200px;
 	height: 200px;
 }
 
 .product-images-3{
-	background: url("../images/product-3.jpg") no-repeat 0 0;
+	background: url("/assets/product-3.jpg") no-repeat 0 0;
 	width: 200px;
 	height: 200px;
 }
 .product-images-4{
-	background: url("../images/product-4.jpg") no-repeat 0 0;
+	background: url("/assets/product-4.jpg") no-repeat 0 0;
 	width: 200px;
 	height: 200px;
 }
@@ -101,7 +101,7 @@ button#nx-add-bag{
 	right: 0;
 }
 .product-images-5{
-	background: url("../images/product-5.jpg") no-repeat 0 0;
+	background: url("/assets/product-5.jpg") no-repeat 0 0;
 	width: 210px;
 	height: 150px;
 	margin: 28px 0 0 -2px;
@@ -115,7 +115,7 @@ button#nx-add-bag{
 	margin-left: 22px;
 }
 .product-images-6{
-	background: url("../images/product-6.jpg") no-repeat 0 0;
+	background: url("/assets/product-6.jpg") no-repeat 0 0;
 	width: 210px;
 	height: 150px;
 	margin: 28px 0 0 -2px;
@@ -128,7 +128,7 @@ button#nx-add-bag{
 	margin-left: 24px;
 }
 .product-images-7{
-	background: url("../images/product-7.jpg") no-repeat 0 0;
+	background: url("/assets/product-7.jpg") no-repeat 0 0;
 	width: 210px;
 	height: 150px;
 	margin: 28px 0 0 -2px;
@@ -169,7 +169,7 @@ p.discount-price span{
 }
 
 button#nx-to-bag{
-	background: url("../images/add-bag.png") no-repeat 0 0;
+	background: url("/assets/add-bag.png") no-repeat 0 0;
 	width: 75px;
 	height: 25px;
 	border: none;
@@ -191,7 +191,7 @@ button#nx-to-bag{
 	float: left;
 }
 .product-images-8{
-	background: url("../images/product-8.jpg") no-repeat 0 0;
+	background: url("/assets/product-8.jpg") no-repeat 0 0;
 	width: 210px;
 	height: 150px;
 	margin: 28px 0 0 -2px;
@@ -205,7 +205,7 @@ button#nx-to-bag{
 	margin-left: 22px;
 }
 .product-images-9{
-	background: url("../images/product-9.jpg") no-repeat 0 0;
+	background: url("/assets/product-9.jpg") no-repeat 0 0;
 	width: 210px;
 	height: 150px;
 	margin: 28px 0 0 -2px;
@@ -219,7 +219,7 @@ button#nx-to-bag{
 	margin-left: 23px;
 }
 .product-images-10{
-	background: url("../images/product-10.jpg") no-repeat 0 0;
+	background: url("/assets/product-10.jpg") no-repeat 0 0;
 	width: 210px;
 	height: 150px;
 	margin: 28px 0 0 -2px;
@@ -314,7 +314,7 @@ input#nx-remember{
 button.nx-validate,
 button.nx-button{
 	margin:10px 0 10px 16px;
-	background: url("../images/nx-button.png") no-repeat 0 0;
+	background: url("/assets/nx-button.png") no-repeat 0 0;
 	height: 35px;
 	width: 95px;
 	cursor: pointer;
@@ -358,7 +358,7 @@ table.user-details select{
 }
 
 .buttonBar-right button.button{
-	background: url("../images/nx-button.png") no-repeat center top;
+	background: url("/assets/nx-button.png") no-repeat center top;
 	color: #fff;
 	cursor: pointer;
 	width: 95px;
@@ -396,7 +396,7 @@ form#contact-form textarea, form#contact-form input {
     padding: 3px 8px;
 }
 form#contact-form button {
-    background: url("../images/nx-button.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/nx-button.png") no-repeat scroll 0 0 transparent;
     border: 0 none;
     color: #fff;
     cursor: pointer;

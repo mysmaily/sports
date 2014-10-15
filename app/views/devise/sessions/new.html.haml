@@ -1,30 +1,48 @@
-#nx-container
-  #nx-container-bottom
-    #nx-left-sidebar
-      .nx-menu-left
-        .bannergroup
-          .banneritem
-            %img{:alt => "Banner Left", :src => "http://truemart.net/vmdemo/bakerymart/images/banners/banner-left.jpg"}/
-            .clr
-    .clear-fix
-    #nx-content
-      .clear-fix
-      .nx-component
-        #system-message-container
-          %p#com-form-login-username.width30.floatleft
-          %h2 Log in
-          = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-            %div
-              = f.label :email
-              %br/
-              = f.email_field :email, autofocus: true
-            %div
-              = f.label :password
-              %br/
-              = f.password_field :password, autocomplete: "off"
-            - if devise_mapping.rememberable?
-              %div
-                = f.check_box :remember_me
-                = f.label :remember_me
-            %div= f.submit "Log in"
-          = render "devise/shared/links"
+#nx-content
+  .clear-fix
+  .nx-component
+    #system-message-container
+    .nx-login
+      %h4.nx-category-title
+        %span
+          %span Login Bakerymart
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        %fieldset
+          .nx-login-fields
+            %label#username-lbl{:for => "user_email"} Email
+            %input#user_email.validate-username{type: "email", :name => "user[email]", :autofocus => true}/
+          .nx-login-fields
+            %label#password-lbl{:for => "user_password"} Password
+            %input#user_password.validate-password{:name => "user[password]", :type => "password", :autocompletev => "off"}/
+          .nx-login-fields
+            %label#nx-remember-lbl{:for => "user_remember_me"} Remember me
+            %input#user_remember_me.inputbox{:alt => "Remember me", :name => "user[remember_me]", :type => "checkbox", :value => "yes"}/
+          %button.nx-button{:type => "submit", :name => "commit"} Log in
+        .nx-user-account
+          %ul
+            - if devise_mapping.registerable? && controller_name != 'registrations'
+              %li
+                = link_to "Sign up", new_registration_path(resource_name)
+            - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'
+              %li
+                = link_to "Forgot your password?", new_password_path(resource_name)
+            - if devise_mapping.confirmable? && controller_name != 'confirmations'
+              = link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name)
+            - if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks'
+              = link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name)
+            - if devise_mapping.omniauthable?
+              - resource_class.omniauth_providers.each do |provider|
+                = link_to "Sign in with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider)
+
+
+
+
+
+
+
+
+
+
+
+
+

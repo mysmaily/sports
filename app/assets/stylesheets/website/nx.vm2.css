@@ -727,11 +727,11 @@ span.comment{
 	padding-top: 2px;
 }
 
-.nx-component fieldset {
+/*.nx-component fieldset {
     border: 1px solid #D3D3D3;
     margin-top: 20px;
     padding: 10px;
-}
+}*/
 .nx-component fieldset h2 {
     font-size: 15px;
     margin-bottom: 10px;
