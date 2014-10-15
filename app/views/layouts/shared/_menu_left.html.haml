@@ -1,26 +1,11 @@
+- i = 0
 #nx-left-sidebar
   .nx-menu-left
     %ul.menu
-      %li.item-136
-        %a{:href => "/vmdemo/bakerymart/index.php/breads"} Breads
-      %li.item-137
-        %a{:href => "/vmdemo/bakerymart/index.php/viennoiserie"} Viennoiserie
-      %li.item-138
-        %a{:href => "/vmdemo/bakerymart/index.php/pastries"} Pastries
-      %li.item-139
-        %a{:href => "/vmdemo/bakerymart/index.php/muffins"} Muffins
-      %li.item-140
-        %a{:href => "/vmdemo/bakerymart/index.php/tarts"} Tarts
-      %li.item-141
-        %a{:href => "/vmdemo/bakerymart/index.php/cookies"} Cookies
-      %li.item-142
-        %a{:href => "/vmdemo/bakerymart/index.php/chocolates"} Chocolates
-      %li.item-143
-        %a{:href => "/vmdemo/bakerymart/index.php/soups-and-salads"} Soups and Salads
-      %li.item-144
-        %a{:href => "/vmdemo/bakerymart/index.php/sandwiches"} Sandwiches
-      %li.item-145
-        %a{:href => "/vmdemo/bakerymart/index.php/quiche"} Quiche
+      - @categorys.each do |t|
+        - i = i + 1
+        %li{class: "item-#{135 + i}"}
+          = link_to t.name, category_path(t)
     .bannergroup
       .banneritem
         %img{:alt => "Banner Left", :src => "http://truemart.net/vmdemo/bakerymart/images/banners/banner-left.jpg"}/

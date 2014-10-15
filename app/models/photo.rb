@@ -1,4 +1,6 @@
 class Photo < ActiveRecord::Base
+
+  self.table_name = 'photos'
   belongs_to :product
   has_attached_file :photo, :styles => { :lager => "500x300#" },
                   :url  => "/assets/products/photos/:id/:style/:basename.:extension",

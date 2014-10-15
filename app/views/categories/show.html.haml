@@ -1,0 +1,88 @@
+#nx-content
+  .clear-fix
+  .nx-component
+    #system-message-container
+    .browse-view
+      %h1.category-title
+        Breads
+      %div{class: "nx-product-list"}
+        - @products.each do |t|
+          .nx-product
+            .nx-spacer
+              .nx-latest-product
+                %img.nx-image{:src => "http://truemart.net/vmdemo/bakerymart/templates/bakerymart/html/com_virtuemart/assets/images//new-product.png"}/
+                .nx-latest-product-picture
+                  %a.modal{:href => product_path(t), :title => t.name}
+                    %img.featuredProductImage{:alt => t.name, :border => "0", :src => t.thum.url, :title => t.name}/
+              .nx-latest-product-info
+                %h2.nx-latest-product-link
+                  = link_to t.name, product_path(t)
+                %p.product_s_desc
+                  = t.description
+                #productPrice10.nx-latest-product-price
+                  .PricevariantModification{:style => "display : none;"}
+                    Variant price modifier:
+                    %span.PricevariantModification
+                  %span.price-crossed
+                    .PricebasePriceWithTax{:style => "display : none;"}
+                      Base price with tax:
+                      %span.PricebasePriceWithTax
+                  .PricesalesPriceWithDiscount{:style => "display : none;"}
+                    Salesprice with discount:
+                    %span.PricesalesPriceWithDiscount
+                  .PricesalesPrice{:style => "display : block;"}
+                    \ 
+                    %span.PricesalesPrice
+                      = "$" + "#{t.price}"
+                  .PricepriceWithoutTax{:style => "display : block;"}
+                    \ 
+                    %span.PricepriceWithoutTax
+                      = "$" + "#{t.price_saleoff}"
+                  .PricetaxAmount{:style => "display : none;"}
+                    Tax amount:
+                    %span.PricetaxAmount
+                / add to card
+                .nx-addtocart-area
+                  %form.product.js-recalculate
+                    .addtocart-bar
+                      %label.quantity_box{:for => "quantity"}
+                      %span.quantity-box
+                        %input.quantity-input{:name => "quantity[]", :type => "text", :value => "1"}/
+                      %span.quantity-controls
+                        %input.quantity-controls.quantity-minus{:type => "button"}/
+                        %br/
+                        %input.quantity-controls.quantity-plus{:type => "button"}/
+                      %span.addtocart-button
+                        %input.addtocart-button{:name => "addtocart", :title => "Add to Cart", :type => "submit", :value => "Add to Cart"}/
+                      .clear
+                    %input.pname{:type => "hidden", :value => "Artisan Maple Oat"}/
+                    %input{:name => "option", :type => "hidden", :value => "com_virtuemart"}/
+                    %input{:name => "view", :type => "hidden", :value => "cart"}/
+                    %noscript
+                      \<input type="hidden" name="task" value="add" />
+                    %input{:name => "virtuemart_product_id[]", :type => "hidden", :value => "10"}/
+                    %input{:name => "virtuemart_manufacturer_id", :type => "hidden", :value => "4"}/
+                    %input{:name => "virtuemart_category_id[]", :type => "hidden", :value => "1"}/
+                  .clear
+              .clear
+        .horizontal-separator
+      
+      #nx-bottom-pagination
+        %ul
+          %li.pagination-start
+            %span.pagenav Start
+          %li.pagination-prev
+            %span.pagenav Prev
+          %li
+            %span.pagenav 1
+          %li
+            %a.pagenav{:href => "/vmdemo/bakerymart/index.php/breads?start=9", :title => "2"} 2
+          %li.pagination-next
+            %a.pagenav{:href => "/vmdemo/bakerymart/index.php/breads?start=9", :title => "Next"} Next
+          %li.pagination-end
+            %a.pagenav{:href => "/vmdemo/bakerymart/index.php/breads?start=9", :title => "End"} End
+        %span.nx-page-counter Page 1 of 2
+    / end browse-view
+    .banner-bottom-listing
+      %img{:alt => "banner", :src => "http://truemart.net/vmdemo/bakerymart/templates/bakerymart/html/com_virtuemart/assets/images/banner-bottom-listing.jpg"}/
+  / END component

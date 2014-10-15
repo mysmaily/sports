@@ -54,6 +54,8 @@ GEM
     fabrication (2.11.3)
     faker (1.4.3)
       i18n (~> 0.5)
+    friendly_id (5.0.4)
+      activerecord (>= 4.0.0)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -144,6 +146,7 @@ DEPENDENCIES
   devise
   fabrication (~> 2.11.3)
   faker
+  friendly_id (~> 5.0.0)
   haml
   jbuilder (~> 2.0)
   jquery-rails

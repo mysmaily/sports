@@ -305,6 +305,9 @@ h2.nx-title-component{
 	margin-top: 17px;
 	float: left;
 }
+.read-m {
+  padding-bottom: 0px
+}
 .content-items-2{
 	width: 220px;
 	overflow: hidden;

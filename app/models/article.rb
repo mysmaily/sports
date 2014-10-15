@@ -1,5 +1,5 @@
 class Article < ActiveRecord::Base
-  has_attached_file :thumn, :styles => { :small => "220x150#" },
+  has_attached_file :thumn, :styles => { :small => "120x95#", :lager => "200x120#" },
                   :url  => "/assets/products/:id/:style/:basename.:extension",
                   :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
 

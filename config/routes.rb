@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :articles
   resources :products
+  resources :categories, path: '', only: [:show]
 
   devise_for :users
 

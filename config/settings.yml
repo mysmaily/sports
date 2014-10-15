@@ -5,5 +5,12 @@ locale:
     - code: EN
       display_name: 'English'
 data:
+  category_name:
+    - Bánh cứt gà
+    - Bánh cứt chó
+    - Bánh cứt chim
+    - Bánh cứt voi
+    - Bánh cứt ngựa
+    - Bánh cứt mèo
   perpage: 3
 sale_off: 1000

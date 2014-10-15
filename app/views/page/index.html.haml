@@ -5,17 +5,18 @@
         = @article_last.title
       .custom
         .content-leading
-          %img{:alt => "leading", :border => "0", :src => @article_last.thumn.url, width: "120px", height: "95px"}/
+          %img{:alt => "leading", :border => "0", :src => @article_last.thumn.url(:small)}/
           %p.intro
             = @article_last.description
         - i = 0
         - @articles.each do |t|
           - i = i + 1
           .content-items-1
-            %img{:alt => "birthday-cake", :border => "0", :src => t.thumn.url, width: "220px", height: "120px"}/
+            %img{:alt => "birthday-cake", :border => "0", :src => t.thumn.url(:lager)}/
             %p.intro-items 
               = t.description[0..100]
-            %p.read-more
-              %a{:href => article_path(t)} Read More
+            .read-m
+              %p.read-more
+                %a{:href => article_path(t)} Read More
   .clear-fix
   = render 'layouts/shared/product_home'
